@@ -56,8 +56,9 @@ public class MouseLook : MonoBehaviour {
 	
 	void Start ()
 	{
+        Rigidbody r = GetComponent<Rigidbody>();
 		// Make the rigid body not change rotation
-		if (rigidbody)
-			rigidbody.freezeRotation = true;
+		if (r)
+			r.freezeRotation = true;
 	}
 }

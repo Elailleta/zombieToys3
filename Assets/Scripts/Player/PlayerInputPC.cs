@@ -56,20 +56,22 @@ public class PlayerInputPC : MonoBehaviour
 
 	void HandleMoveInput()
 	{
-		//If there is no movement script, leave
-		if (playerMovement == null)
-			return;
+        //If there is no movement script, leave
+        if (playerMovement == null)
+        {
+            return;
+        }
 		//Get the raw Horizontal and Vertical inputs (raw inputs have no smoothing applied)
 		float horizontal = Input.GetAxisRaw("Horizontal");
 		float vertical = Input.GetAxisRaw("Vertical");
 		//Tell the movement script to move on the X and Z axes with no Y axis movement
 		playerMovement.MoveDirection = new Vector3(horizontal, 0, vertical);
-		//If there is a MouseLocation script and the mouse's position is valid...
-		if (MouseLocation.Instance != null && MouseLocation.Instance.IsValid) {
+        //If there is a MouseLocation script and the mouse's position is valid...
+ 		if (MouseLocation.Instance != null && MouseLocation.Instance.IsValid) {
 			//Find the point the player should look at by subtracting the player's position from the mouse's position
 			Vector3 lookPoint = MouseLocation.Instance.MousePosition - playerMovement.transform.position;
-			//Tell the player what direction to look
-			playerMovement.LookDirection = lookPoint;
+            //Tell the player what direction to look
+ 			playerMovement.LookDirection = lookPoint;
 		}
 	}
 

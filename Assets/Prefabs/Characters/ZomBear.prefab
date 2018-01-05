@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4647350465165512}
   - component: {fileID: 137790885375444206}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Zombear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 114413054851492714}
   - component: {fileID: 114818794298398784}
   - component: {fileID: 195392438757052252}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ZomBear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ MonoBehaviour:
   deathClip: {fileID: 0}
   hurtClip: {fileID: 0}
   enemyAttack: {fileID: 114818794298398784}
-  enemyMovement: {fileID: 0}
+  enemyMovement: {fileID: 114875629993702918}
   animator: {fileID: 95139018704265274}
   audioSource: {fileID: 0}
   capsuleCollider: {fileID: 136617293263860024}

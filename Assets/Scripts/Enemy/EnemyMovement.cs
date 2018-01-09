@@ -105,6 +105,7 @@ public class EnemyMovement : MonoBehaviour
 	//This method is called when the enemy is hit by a stink attack
 	public void Runaway()
 	{
+        Debug.Log("Running Away " + gameObject.name);
 		//The enemy is now running away
 		isRunningAway = true;
 		//Get a vector from the player's position to the enemy's position

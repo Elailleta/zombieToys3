@@ -81,11 +81,13 @@ public class EnemyHealth : MonoBehaviour
 
 		//Reduce the current health by the amount of damage
 		currentHealth -= amount;
-
-		//If the current health is now at or below 0, the enemy is defeated
-		if (currentHealth <= 0)
-			Defeated();
-
+        Debug.Log(currentHealth+" "+amount);
+        //If the current health is now at or below 0, the enemy is defeated
+        if (currentHealth <= 0)
+        {
+            Debug.Log("I'm Dead!"+this.name);
+            Defeated();
+        }
 		//If there is an audio source, play it
 		if(audioSource != null)
 			audioSource.Play();

@@ -177,7 +177,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1036101513439468}
   m_LocalRotation: {x: -0, y: 0.95125383, z: -0, w: 0.30840907}
-  m_LocalPosition: {x: -5.11, y: 0, z: 24.72}
+  m_LocalPosition: {x: -3.8, y: 0, z: -20.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4789315922064844}
@@ -460,7 +460,7 @@ MonoBehaviour:
   animator: {fileID: 95640172583816702}
   audioSource: {fileID: 82586684716837442}
   capsuleCollider: {fileID: 136128993014103272}
-  hitParticles: {fileID: 0}
+  hitParticles: {fileID: 19881454, guid: c0dbda44532b5ef4991cf3b717a75aa0, type: 2}
   isInvulnerable: 0
 --- !u!135 &135035462518645774
 SphereCollider:
@@ -496,6 +496,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -511,6 +512,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

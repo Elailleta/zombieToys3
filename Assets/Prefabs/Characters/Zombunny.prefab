@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1181865189892560}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.91, y: 0, z: 26.48}
+  m_LocalPosition: {x: 5, y: 0, z: -25.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4922550700749512}
@@ -213,7 +213,7 @@ MonoBehaviour:
   animator: {fileID: 95675098204932620}
   audioSource: {fileID: 82649677724738112}
   capsuleCollider: {fileID: 136852357226660292}
-  hitParticles: {fileID: 0}
+  hitParticles: {fileID: 19881454, guid: c0dbda44532b5ef4991cf3b717a75aa0, type: 2}
   isInvulnerable: 0
 --- !u!114 &114757970105189594
 MonoBehaviour:
@@ -264,6 +264,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -280,6 +281,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

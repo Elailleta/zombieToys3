@@ -28,19 +28,7 @@ public class EnemySpawner : MonoBehaviour
 		//Loop through the array and...
 		for (int i = 0; i < maxEnemies; i++)
 		{
-            GameObject enem = new GameObject("Target");
-            Vector3 sourcePostion = new Vector3(-51.84045f, 0, 0 - 23.678f);//The position you want to place your agent
-            NavMeshHit closestHit;
-            if (NavMesh.SamplePosition(sourcePostion, out closestHit, 0, 0))
-            {
-                enem.transform.position = closestHit.position;
-                enem.AddComponent<NavMeshAgent>();
-                //TODO
-            }
-            else
-            {
-                Debug.Log("...");
-            }
+          
             //...instantiate an enemy game object from a prefab...
             GameObject obj = (GameObject)Instantiate(enemyPrefab);
 			//...get a reference to its EnemyHealth script...

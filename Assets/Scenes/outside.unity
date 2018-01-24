@@ -77,15 +77,17 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
   m_LightingDataAsset: {fileID: 112000160, guid: 5ed17c829b260c44d86e0ad88f552aa4,
     type: 2}
   m_UseShadowmask: 1
@@ -108,6 +110,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: d06cf706c04115a4fb23a1d7900e4195, type: 2}
 --- !u!1001 &51423299
 Prefab:
@@ -261,6 +265,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -277,6 +282,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -428,6 +434,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -443,6 +450,7 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2278,6 +2286,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2293,6 +2302,7 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -6129,12 +6139,12 @@ Prefab:
     - target: {fileID: 224325727721708834, guid: 121457857a79353448ecdbb9c52b6d06,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 442.5
       objectReference: {fileID: 0}
     - target: {fileID: 224325727721708834, guid: 121457857a79353448ecdbb9c52b6d06,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 460
       objectReference: {fileID: 0}
     - target: {fileID: 224325727721708834, guid: 121457857a79353448ecdbb9c52b6d06,
         type: 2}
@@ -6222,6 +6232,21 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: beabc4f30281a07429e18475608f263a,
         type: 3}
+    - target: {fileID: 114611856241853042, guid: 121457857a79353448ecdbb9c52b6d06,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114611856241853042, guid: 121457857a79353448ecdbb9c52b6d06,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114611856241853042, guid: 121457857a79353448ecdbb9c52b6d06,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 121457857a79353448ecdbb9c52b6d06, type: 2}
   m_IsPrefabParent: 0
@@ -6758,6 +6783,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6773,6 +6799,7 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -8514,12 +8541,12 @@ Prefab:
     - target: {fileID: 224416646994278452, guid: b26bd696ec4a5eb42925c58605bedc2c,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 442.5
       objectReference: {fileID: 0}
     - target: {fileID: 224416646994278452, guid: b26bd696ec4a5eb42925c58605bedc2c,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 460
       objectReference: {fileID: 0}
     - target: {fileID: 224416646994278452, guid: b26bd696ec4a5eb42925c58605bedc2c,
         type: 2}
@@ -8601,6 +8628,18 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114326721371276168, guid: b26bd696ec4a5eb42925c58605bedc2c,
+        type: 2}
+      propertyPath: mutedSnapshot
+      value: 
+      objectReference: {fileID: 245084690730297328, guid: 5b84db49d40ea449aa4f3e3bd229ab5b,
+        type: 2}
+    - target: {fileID: 114326721371276168, guid: b26bd696ec4a5eb42925c58605bedc2c,
+        type: 2}
+      propertyPath: unMutedSnapshot
+      value: 
+      objectReference: {fileID: 24556752, guid: 5b84db49d40ea449aa4f3e3bd229ab5b,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b26bd696ec4a5eb42925c58605bedc2c, type: 2}
   m_IsPrefabParent: 0
@@ -8744,6 +8783,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8759,6 +8799,7 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

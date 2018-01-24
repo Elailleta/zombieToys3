@@ -95,6 +95,10 @@ public class GameManager : MonoBehaviour
 		//If the ally manager exists, give it some points for the player to spend on an ally
 		if (allyManager != null)
 			allyManager.AddPoints(points);
+        if (score >= 150)
+        {
+            SceneManager.LoadScene("outside");
+        }
 	}
 
 	//Called from the PlayerInput scripts and / or the Ally button OnClick() event
@@ -132,4 +136,6 @@ public class GameManager : MonoBehaviour
 		//Tell the SceneManager to load the current scene (which reloads it)
 		SceneManager.LoadScene(currentScene.buildIndex);
 	}
+
+
 }
